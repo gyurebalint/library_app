@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Library App',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch(
@@ -16,6 +17,12 @@ class MyApp extends StatelessWidget {
         ).copyWith(
           secondary: Colors.amber,
         ),
+        textTheme: const TextTheme(
+            headlineMedium: TextStyle(
+          fontSize: 20,
+          color: Colors.black,
+          fontWeight: FontWeight.bold,
+        )),
       ),
       home: LibraryHomeScreen(),
     );

@@ -12,6 +12,7 @@ class _LibraryHomeScreenState extends State<LibraryHomeScreen> {
       appBar: AppBar(
         title: Text(
           'My Library',
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
       ),
     );
