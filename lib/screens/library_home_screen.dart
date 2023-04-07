@@ -14,6 +14,12 @@ class _LibraryHomeScreenState extends State<LibraryHomeScreen> {
           'My Library',
           style: Theme.of(context).textTheme.headlineMedium,
         ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.add),
+            onPressed: () {},
+          )
+        ],
       ),
     );
   }
